@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import useForm from "./Forms/form";
+import useForm from "./Forms/FormControl";
 import axios from "axios";
 import { Users } from "./Users";
-import Maps from "./Maps";
-import Loading from "./Loading";
-import Select from "./Select";
-import Input from "./Input";
+import Maps from "./Components/Maps";
+import Loading from "./Components/Loading";
+import Select from "./Components/Select";
+import Input from "./Components/Input";
 import {
   validateBody,
   validateText,
