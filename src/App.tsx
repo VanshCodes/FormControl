@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import useForm from "./Forms/FormControl";
 import axios from "axios";
-import { Users } from "./Users";
+import { Users } from "./Helpers/Users";
 import Maps from "./Components/Maps";
 import Loading from "./Components/Loading";
 import Select from "./Components/Select";
@@ -11,7 +11,7 @@ import {
   validateBody,
   validateText,
   validateUserID,
-} from "./ValidationFunctions";
+} from "./Helpers/ValidationFunctions";
 
 function App() {
   const [users, setUsers] = useState<Users[]>([]);

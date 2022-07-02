@@ -1,4 +1,4 @@
-import { ValidateFunctionType } from "./Components/Constants";
+import { ValidateFunctionType } from "./Constants";
 
 export const validateUserID: ValidateFunctionType = (
   value: string | number

@@ -1,5 +1,5 @@
 import React from "react";
-import { InputType } from "./Constants";
+import { InputType } from "../Helpers/Constants";
 
 export default function Select({
   item,
