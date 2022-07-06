@@ -19,6 +19,7 @@ function App() {
     lat: 0,
     long: 0,
   });
+  const [axiosError, setAxiosError] = useState<string>("");
   const formMakerList = [
     { name: "userID", type: "select", selectValues: users, label: "User ID" },
     { name: "body", type: "text", label: "Name" },
@@ -49,9 +50,11 @@ function App() {
         {
           title: title.value,
           body: body.value,
-          userId: userID.value,
+          userId: userID.value as number,
         }
       );
+      // Error  && setAxiosError(req.statusText);
+      req.status === 200 && setAxiosError("Request Not Completed");
     },
   });
 
@@ -110,6 +113,8 @@ function App() {
             </div>
           );
         })}
+
+        <h5 className="text-red-500">{axiosError}</h5>
 
         <button className="btn" type="submit">
           Submit

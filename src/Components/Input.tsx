@@ -1,5 +1,5 @@
 import React from "react";
-import { InputType } from "../Helpers/Constants";
+import { InputType } from "../Helpers/TypesHelper";
 
 export default function Input({
   former,

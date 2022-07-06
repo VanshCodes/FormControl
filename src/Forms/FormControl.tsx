@@ -1,5 +1,5 @@
 import React from "react";
-import { ErrorType, newInitValue, ValidateFunctionType } from "../Helpers/Constants";
+import { ErrorType, newInitValue, ValidateFunctionType } from "../Helpers/TypesHelper";
 
 export default function useForm({
   initialValues,
